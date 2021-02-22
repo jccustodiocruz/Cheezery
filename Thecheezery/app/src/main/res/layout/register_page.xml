@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingHorizontal="40dp"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:layout_width="215dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/hello" />
+
+    <EditText
+        android:id="@+id/nameArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:textColor="@color/very_purple"
+        android:textColorHighlight="@color/dusty_white"
+        android:textColorHint="@color/cardview_dark_background"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/lastNameArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lastName"
+        android:inputType="text"
+        android:textColor="@color/very_purple"
+        android:textColorHint="@color/cardview_dark_background"
+        tools:visibility="visible" />
+
+
+    <EditText
+        android:id="@+id/emailArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/very_purple"
+        android:textColorHint="@color/cardview_dark_background" />
+
+    <EditText
+        android:id="@+id/passwordArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColor="@color/very_purple"
+        android:textColorHint="@color/cardview_dark_background" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/terms"
+        android:textColor="@color/black"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="219dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="@string/sign_in"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

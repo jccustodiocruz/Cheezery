@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <ImageView
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/menu"
+        android:textAllCaps="true"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:layout_marginTop="30dp"
+        android:paddingHorizontal="50dp">
+
+        <Button
+            android:id="@+id/btnColdDrinks"
+            android:layout_width="128dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:text="@string/coldDrinks"
+            android:textColor="@color/dusty_white"
+            />
+
+        <Button
+            android:id="@+id/btnHotDrinks"
+            android:layout_width="126dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:text="@string/hotDrinks"
+            android:textColor="@color/dusty_white"/>
+
+        <Button
+            android:id="@+id/btnSweets"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:text="@string/sweets"
+            android:textColor="@color/dusty_white"/>
+
+        <Button
+            android:id="@+id/btnSalties"
+            android:text="@string/salties"
+            android:textColor="@color/dusty_white"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight="1"
+            />
+
+        <Button
+            android:id="@+id/btnCombos"
+            android:text="@string/combos"
+            android:textColor="@color/dusty_white"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight="1"
+            />
+
+        <Button
+            android:id="@+id/btnCustom"
+            android:text="@string/custom"
+            android:textColor="@color/dusty_white"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight="1"
+            />
+
+
+
+    </GridLayout>
+
+</LinearLayout>
